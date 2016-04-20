@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+if [ -z "$1" ]; then
+  echo "Must specify an event e.g. $0 'something happened'"
+  exit 1
+fi
+
+# take a snapshot of what the camera sees
+imagesnap -q "snapshots/`date` $1.jpg"
+
+# remove old snapshots
+find snapshots -depth 1 -name "*.jpg" -mtime +30 | xargs rm

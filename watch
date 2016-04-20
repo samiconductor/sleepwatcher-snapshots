@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+/usr/local/sbin/sleepwatcher \
+  --wakeup "snapshot wakeup" \
+  --displayundim "snapshot 'display undim'" \
+  --displaywakeup "snapshot 'display wakeup'" \
+  --break 50 --resume "snapshot resume"

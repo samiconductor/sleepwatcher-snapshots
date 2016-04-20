@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/Users/ssimmons/.sleepwatcher</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.samiconductor.sleepwatcher</string>
+	<key>Program</key>
+	<string>watch</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>watch.err</string>
+	<key>StandardOutPath</key>
+	<string>watch.out</string>
+	<key>WorkingDirectory</key>
+	<string>/Users/ssimmons/.sleepwatcher</string>
+</dict>
+</plist>
