@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-/usr/local/sbin/sleepwatcher \
+sleepwatcher \
   --wakeup "snapshot wakeup" \
   --displayundim "snapshot 'display undim'" \
   --displaywakeup "snapshot 'display wakeup'"
