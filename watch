@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 
+# allow the screen to startup to provide lighting
+delay=1.5
+
 sleepwatcher \
-  --wakeup "snapshot wakeup" \
-  --displayundim "snapshot 'display undim'" \
-  --displaywakeup "snapshot 'display wakeup'"
+  --wakeup "snapshot wakeup $delay" \
+  --displayundim "snapshot 'display undim' $delay" \
+  --displaywakeup "snapshot 'display wakeup' $delay"

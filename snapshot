@@ -5,8 +5,14 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+# delay snapshot for x.xx seconds
+delay=${2:-"0"}
+
+# image format
+filetype=jpg
+
 # take a snapshot of what the camera sees
-imagesnap -q "snapshots/`date +"%Y-%m-%dT%H:%M:%S%z"` $1.jpg"
+imagesnap -q -w $delay "snapshots/`date +"%Y-%m-%dT%H:%M:%S%z"` $1.$filetype"
 
 # remove old snapshots
-find snapshots -depth 1 -name "*.jpg" -mtime +30 | xargs rm
+find snapshots -depth 1 -name "*.$filetype" -mtime +30 | xargs rm
