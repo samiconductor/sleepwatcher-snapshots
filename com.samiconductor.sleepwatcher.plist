@@ -5,7 +5,7 @@
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>PATH</key>
-		<string>/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/Users/ssimmons/.sleepwatcher</string>
+		<string>/Users/ssimmons/.sleepwatcher:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin</string>
 	</dict>
 	<key>KeepAlive</key>
 	<true/>
